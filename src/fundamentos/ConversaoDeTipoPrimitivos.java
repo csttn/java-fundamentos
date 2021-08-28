@@ -1,5 +1,9 @@
 package fundamentos;
 
+
+import javax.swing.*;
+import java.math.BigDecimal;
+
 public class ConversaoDeTipoPrimitivos {
 
     public static void main(String[] args) {
@@ -23,6 +27,36 @@ public class ConversaoDeTipoPrimitivos {
         int g = (int) f;
         // nesse cenário é delicadado, pois no momento da conversão para int as casas decimais são
 //        completamente ignoradas na conversão, o ideal a ser passado como valor seria 2, porém, as casas são ignoradas.
+
+
+//        Conversão de números para String
+
+        Integer num1 = 10000;
+        System.out.println(num1.toString());
+
+        int num2 = 20000;
+
+        System.out.println(Integer.toString(num2));
+
+
+//         conversão de string para numero
+        String valor1 = (JOptionPane.showInputDialog("Digite o seu numero"));
+        String valor2 = (JOptionPane.showInputDialog("Digite o seu segundo numero"));
+
+
+        double numero1 = Double.parseDouble(valor1);
+        double numero2 = Double.parseDouble(valor2);
+
+        System.out.println(numero1 + numero2);
+//        é retonardo um numero com muitas casas decimais pois é usado um algortimo não tão preciso para calcular os numeros
+
+//        é preciso converter o tipo double para string pata evitar imprecisão
+        BigDecimal bigDecimalNum1 = new BigDecimal(Double.toString(numero1));
+        BigDecimal bigDecimalNum2 = new BigDecimal(Double.toString(numero2));
+
+        BigDecimal bigResult = bigDecimalNum1.add(bigDecimalNum2);
+        System.out.println("BigDecimal Value: "+ bigResult.toString());
+
 
 
 
