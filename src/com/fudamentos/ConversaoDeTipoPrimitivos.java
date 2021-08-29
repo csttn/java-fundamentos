@@ -1,4 +1,4 @@
-package fundamentos;
+package com.fudamentos;
 
 
 import javax.swing.*;
