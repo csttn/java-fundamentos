@@ -1,6 +1,5 @@
-package com.arrays.exercicios;
+package com.classe.exercicios;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Matriz {

@@ -1,21 +1,18 @@
-package com.arrays.exercicios;
+package com.classe.exercicios;
 
 import java.util.Arrays;
 
-public class Foreach {
-
+public class Exercicio {
 
     public static void main(String[] args) {
+
         double[] notas = new double[3];
 
         for (int i = 0; i < notas.length; i++){
             notas[i] = Math.floor(Math.random() * 10);
         }
-
-        for (var nota: notas) {
-            System.out.println(nota);
-
-        }
+        System.out.println(Arrays.toString(notas));
+        System.out.println("Média " + Math.floor(Arrays.stream(notas).sum() / notas.length));
 
 
 
