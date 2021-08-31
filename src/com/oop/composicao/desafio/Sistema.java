@@ -11,7 +11,6 @@ public class Sistema {
         Produto album = new Produto("albuum",1 );
 
         Compra carrinho = new Compra();
-
         carrinho.items.add(new Item(caneta,1));
         carrinho.items.add(new Item(caderno, 1));
         carrinho.items.add(new Item(album, 1));
