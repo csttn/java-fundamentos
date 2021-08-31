@@ -3,6 +3,7 @@ package com.arrays.collections;
 import com.classe.exercicios.Usuario;
 
 import java.util.ArrayList;
+import java.util.Queue;
 
 public class Lista {
 
@@ -20,8 +21,10 @@ public class Lista {
         lista.add(u2);
         lista.add(u3);
 
-        for(Usuario u: lista){
+        for ( Usuario u:
+                lista) {
             System.out.println(u.nome);
+
         }
     }
 

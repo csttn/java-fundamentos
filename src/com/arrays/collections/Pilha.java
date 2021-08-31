@@ -3,7 +3,7 @@ package com.arrays.collections;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class Stack {
+public class Pilha {
 
     public static void main(String[] args) {
 

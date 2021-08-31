@@ -1,12 +1,13 @@
 package com.arrays.collections;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
-public class Queue {
+public class Fila {
 
     public static void main(String[] args) {
 
-        LinkedList fila = new LinkedList();
+        Queue fila = new LinkedList();
 
 //        Caso ocorra um erro ao adicionar o elemento na lista um erro será lançado, se a mesma estiver cheia
         fila.add("Ana");
