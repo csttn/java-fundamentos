@@ -8,7 +8,6 @@ public class ConversaoDeTipoPrimitivos {
 
     public static void main(String[] args) {
 
-
         //      declarando  forma implicita
         double a = 1;
 
@@ -56,8 +55,6 @@ public class ConversaoDeTipoPrimitivos {
 
         BigDecimal bigResult = bigDecimalNum1.add(bigDecimalNum2);
         System.out.println("BigDecimal Value: "+ bigResult.toString());
-
-
 
 
 

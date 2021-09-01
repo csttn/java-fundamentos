@@ -19,11 +19,14 @@ public class Console {
         String sobrenome = teclado.nextLine();
 
 
-        String texto = """
-              Nome:  %s
-              Sobrenome: %s
-              Idade: %s
-               """.formatted(nome,sobrenome,idade);
+        // String texto = """
+        //       Nome:  %s
+        //       Sobrenome: %s
+        //       Idade: %s
+        //        """.formatted(nome,sobrenome,idade);
+
+
+        String texto = String.format("Nome: %s\nSobrenome: %s\nIdade: %s", nome, sobrenome, idade);
 
         System.out.println(texto);
 
