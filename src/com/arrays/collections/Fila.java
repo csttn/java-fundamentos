@@ -7,7 +7,7 @@ public class Fila {
 
         public static void main(String[] args) {
 
-                Queue fila = new LinkedList();
+                Queue<String> fila = new LinkedList<>();
 
                 // Caso ocorra um erro ao adicionar o elemento na lista um erro será lançado, se
                 // a mesma estiver cheia
