@@ -2,6 +2,7 @@ package com.oop.polimorfismo;
 
 public class Pessoa {
 
+    // Definindo atributos privados e acessndo-os através de getters e setters
     private double peso;
 
     public Pessoa(double peso) {
@@ -18,6 +19,8 @@ public class Pessoa {
         }
     }
 
+    // Polimorfismo dinamico, aceita todos os tipos de objetos que herdam de Comida
+    // Ex: Classe Arroz, Feijao, Frango, Carne, etc...
     public void comer(Comida comida) {
         setPeso(getPeso() + comida.getPeso());
     }
