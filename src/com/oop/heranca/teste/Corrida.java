@@ -11,13 +11,17 @@ public class Corrida {
         Fusca fusca = new Fusca();
 
         for (int i = 0; i < 10; i++) {
+
             ferrari.acelerar();
+            ferrari.ligarTurbo();
             fusca.acelerar();
             System.out.println("Ferrari: " + ferrari.getVelocidadeAtual());
             System.out.println("Fusca: " + fusca.getVelocidadeAtual());
+
         }
 
         for (int i = 0; i < 10; i++) {
+            ferrari.desligarTurbo();
             ferrari.frear();
             fusca.frear();
             System.out.println("Ferrari: " + ferrari.getVelocidadeAtual());

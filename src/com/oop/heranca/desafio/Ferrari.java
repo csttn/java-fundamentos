@@ -1,9 +1,13 @@
 package com.oop.heranca.desafio;
 
-public class Ferrari extends Carro {
+public class Ferrari extends Carro implements Esportivo {
+
+    private static double turbo = 30;
+    private static int delta = 20;
+    private static int velocidadeMaxima = 400;
 
     public Ferrari() {
-        super(400, 40);
+        super(velocidadeMaxima, delta);
     }
 
     public void acelerar() {
@@ -16,6 +20,18 @@ public class Ferrari extends Carro {
 
     public double getVelocidadeAtual() {
         return super.getVelocidadeAtual();
+    }
+
+    @Override
+    public void ligarTurbo() {
+        if (getVelocidadeAtual() < getDelta() + turbo) {
+            super.setDelta(delta + turbo);
+        }
+    }
+
+    @Override
+    public void desligarTurbo() {
+        super.setDelta(delta);
     }
 
 }
