@@ -1,4 +1,7 @@
-package com.oop.heranca.desafio;
+package com.oop.heranca.teste;
+
+import com.oop.heranca.desafio.Ferrari;
+import com.oop.heranca.desafio.Fusca;
 
 public class Corrida {
 

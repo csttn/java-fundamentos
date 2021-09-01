@@ -2,10 +2,18 @@ package com.oop.heranca.desafio;
 
 public class Ferrari extends Carro {
 
-
-    Ferrari() {
+    public Ferrari() {
         super(400);
         super.delta = 300;
     }
+
+
+    public void acelerar(){
+        super.acelerar();
+    }
+    public void frear(){
+        super.frear();
+    }
+
 
 }
