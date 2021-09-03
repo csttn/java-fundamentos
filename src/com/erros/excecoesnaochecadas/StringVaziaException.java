@@ -1,4 +1,4 @@
-package com.erros.personalizado;
+package com.erros.excecoesnaochecadas;
 
 public class StringVaziaException extends RuntimeException {
 

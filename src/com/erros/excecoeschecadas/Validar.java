@@ -1,4 +1,4 @@
-package com.erros.personalizado;
+package com.erros.excecoeschecadas;
 
 import com.streams.Aluno;
 
@@ -7,7 +7,9 @@ public class Validar {
     private Validar() {
     }
 
-    public static void aluno(Aluno aluno) {
+    // EM exceções checada sé obrigado informar ao método que está invocando que
+    // poderá ser lançada uma exceção
+    public static void aluno(Aluno aluno) throws StringVaziaException, NotaInvalidaException {
 
         if (aluno == null) {
             throw new IllegalArgumentException("O aluno está nulo");

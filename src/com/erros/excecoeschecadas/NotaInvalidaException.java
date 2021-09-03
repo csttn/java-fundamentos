@@ -1,6 +1,6 @@
-package com.erros.personalizado;
+package com.erros.excecoeschecadas;
 
-public class NotaInvalidaException extends RuntimeException {
+public class NotaInvalidaException extends Exception {
 
     private double numero;
 
