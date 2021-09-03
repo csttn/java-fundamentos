@@ -12,4 +12,20 @@ public class Aluno {
         this.comportamento = comportamento;
     }
 
+    public String getNome() {
+        return this.nome;
+    }
+
+    public double getNota() {
+        return this.nota;
+    }
+
+    public boolean isComportamento() {
+        return this.comportamento;
+    }
+
+    public boolean getComportamento() {
+        return this.comportamento;
+    }
+
 }
