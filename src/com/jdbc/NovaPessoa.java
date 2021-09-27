@@ -5,9 +5,19 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class NovaPessoa {
+import com.jdbc.entity.Pessoa;
 
+public class NovaPessoa { 
+	
+	
 	public static void main(String[] args) throws SQLException {
+		
+		
+		cadastrarNovaPessoaNoBanco(); 
+	}
+
+	
+	public static void cadastrarNovaPessoaNoBanco() throws SQLException {
 
 		
 		Connection conexao = FabricaConexao.getConexao();
@@ -33,8 +43,32 @@ public class NovaPessoa {
 		preparedStatement.execute();
 		
 		System.out.println("Pessoa incluida com sucesso");
+				
+		preparedStatement.close();
+		conexao.close();
 		
-		entrada.close();
+		
 	}
 
+	
+	public static void atualizarPessoaNobanco(Pessoa pessoa) throws SQLException {
+	
+		Connection conexao = FabricaConexao.getConexao();
+			
+		
+//		para evitar isso, é necessario usar o preparedStatament
+		String sql = "UPDATE pessoa set nome=? WHERE codigo=?";
+		
+		PreparedStatement preparedStatement = conexao.prepareStatement(sql);
+		
+		preparedStatement.setString(1, pessoa.getNome());
+		preparedStatement.setInt(2, pessoa.getCodigo());
+		preparedStatement.executeUpdate();
+		
+		System.out.println("Pessoa Alterada com sucesso!");
+		
+		conexao.close();
+		preparedStatement.close();
+		
+	}
 }
